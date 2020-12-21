@@ -1,7 +1,18 @@
 body
 {
-	background: no-repeat url(background.jpg);
+	background: no-repeat #bbb url(background.jpg);
 	background-size: 100%;
+}
+
+a{
+	color: #000;
+	border-bottom: 1px solid #000;
+	text-decoration: none;
+	padding: 2px;
+}
+
+a:hover {
+	border-bottom-style: dashed;
 }
 
 #profile-image
@@ -14,7 +25,39 @@ body
 
 #main {
 	width: 80%;
+	overflow: auto;
 	margin: 5% auto;
+}
+
+#main #speech-bubble {
+	float: left;
+  width: 300px;
+  margin: 50px 0 0 50px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+	border-radius: 5px;
+  color: #000;
+	font: 14px Arial;
+	line-height: 1.5;
+  position: relative;
+}
+
+#main img {
+	float:left;
+}
+
+#main #speech-bubble:before {
+	content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #fff;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
 }
 
 #navigation {
@@ -50,6 +93,7 @@ body
 #navigation-screen a.link {
 	font-size: 48px;
 	color: #fff;
+	border: none;
 	font-family: sans-serif;
 	text-decoration: none;
 	display: block;

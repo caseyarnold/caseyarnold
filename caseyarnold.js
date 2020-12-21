@@ -1,4 +1,4 @@
-const gp = gsap.timeline( { defaults: { ease: 'power1.out' } })
+const gp = gsap.timeline({ defaults: { ease: 'power1.out' } })
 
 document.querySelector('#navigation-trigger').addEventListener('click', function () {
   gp.to('#navigation-screen', {
