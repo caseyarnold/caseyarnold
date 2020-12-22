@@ -67,12 +67,8 @@ a:hover {
 	top: 10px;
 }
 
-.hidden {
-	opacity: 0;
-	z-index: -500;
-}
-
 #about-screen {
+	display: none;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -84,6 +80,7 @@ a:hover {
 }
 
 #navigation-screen {
+	display: none;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -94,13 +91,15 @@ a:hover {
 	padding: 20px 0;
 }
 
-#navigation-screen #exit-button {
+#exit-button {
+		display: none;
 		position: absolute;
+		z-index: 500;
 		right: 10px;
 		top: 10px;
 }
 
-#navigation-screen #exit-button img {
+#exit-button img {
 	width: 32px;
 	height: 32px;
 }
