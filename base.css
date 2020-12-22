@@ -1,7 +1,7 @@
 body
 {
 	background: no-repeat #bbb url(background.jpg);
-	background-size: 100%;
+	background-size: 100%; 
 }
 
 a{
@@ -29,7 +29,7 @@ a:hover {
 	margin: 5% auto;
 }
 
-#main #speech-bubble {
+.speech-bubble {
 	float: left;
   width: 300px;
   margin: 50px 0 0 50px;
@@ -47,7 +47,7 @@ a:hover {
 	float:left;
 }
 
-#main #speech-bubble:before {
+.speech-bubble:before {
 	content: "";
   width: 0px;
   height: 0px;
@@ -56,12 +56,12 @@ a:hover {
   border-right: 10px solid #fff;
   border-top: 10px solid #fff;
   border-bottom: 10px solid transparent;
-  left: -19px;
+  left: -20px;
   top: 6px;
 }
 
 #navigation {
-	position: absolute;
+	position: fixed;
 	right: 10px;
 	top: 10px;
 }
