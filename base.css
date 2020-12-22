@@ -1,14 +1,13 @@
 body
 {
 	background: no-repeat #bbb url(background.jpg);
-	background-size: 100%; 
+	background-size: 100%;
 }
 
 a{
 	color: #000;
 	border-bottom: 1px solid #000;
 	text-decoration: none;
-	padding: 2px;
 }
 
 a:hover {
@@ -66,9 +65,23 @@ a:hover {
 	top: 10px;
 }
 
-#navigation-screen {
+.hidden {
 	opacity: 0;
 	z-index: -500;
+}
+
+#about-screen {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: red;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#navigation-screen {
 	position: absolute;
 	width: 100%;
 	height: 100%;
