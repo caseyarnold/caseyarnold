@@ -1,7 +1,9 @@
-body
+html
 {
-	background: no-repeat #bbb url(background.jpg);
-	background-size: 100%;
+	background: url('background.jpg') no-repeat center center;
+	background-size: cover;
+	min-height:100%;
+	overflow: hidden;
 }
 
 a{
