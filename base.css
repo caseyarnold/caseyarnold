@@ -46,7 +46,7 @@ h1#main-blurb {
 	float: left;
 	text-align: center;
 }
-
+/* *{border:1px solid red} */
 #profile-image
 {
 	width: 300px;
@@ -56,18 +56,20 @@ h1#main-blurb {
 }
 
 #main {
-	width: 40vw;
+	width: 70vw;
+	text-align: center;
 	overflow: visible;
 	margin: 20vh auto;
 }
 
 .speech-bubble {
-	float: left;
   width: 300px;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 0 20px;
+	vertical-align: top;
   background: #fff;
   padding: 20px;
   text-align: center;
+	display: inline-block;
 	border-radius: 5px;
   color: #000;
 	font: 14px Arial;
@@ -76,7 +78,7 @@ h1#main-blurb {
 }
 
 #main img {
-	float:left;
+	display: inline;
 }
 
 .speech-bubble:before {
