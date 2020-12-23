@@ -14,6 +14,11 @@ a{
 	text-decoration: none;
 }
 
+img,
+a img {
+	border-style: none;
+}
+
 a:hover {
 	border-bottom-style: dashed;
 }
