@@ -4,6 +4,8 @@ html
 	background-size: cover;
 	min-height:100%;
 	overflow: hidden;
+	font-family: Arial, sans-serif;
+	color: #fff;
 }
 
 a{
@@ -14,6 +16,14 @@ a{
 
 a:hover {
 	border-bottom-style: dashed;
+}
+
+.bold-text {
+	font-weight: 900;
+}
+
+.small-text {
+	font-size: 85%;
 }
 
 #profile-image
