@@ -1,11 +1,31 @@
-html
+html,
+body {
+	font-family: Arial, sans-serif;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+div#screens {
+	flex-direction: column;
+	display: flex;
+}
+
+div#first-section
 {
 	background: url('montreal.jpg') no-repeat center center;
 	background-size: cover;
-	min-height:100%;
-	overflow: hidden;
-	font-family: Arial, sans-serif;
-	color: #fff;
+	height:100vh;
+	/* position: absolute;
+	top: 0;
+	left: 0; */
+}
+
+div#second-section {
+	background: #c0c0c0;
+	height: 100vh;
+	display: block;
 }
 
 a{
@@ -98,6 +118,7 @@ h1#main-blurb {
 	position: fixed;
 	right: 10px;
 	top: 10px;
+	z-index: 100;
 }
 
 #about-screen {
@@ -121,7 +142,6 @@ h1#main-blurb {
 	top: 0;
 	background: #a0a0a0;
 	text-align: center;
-	padding: 20px 0;
 }
 
 #exit-button {

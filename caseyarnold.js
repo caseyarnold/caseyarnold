@@ -11,7 +11,7 @@ $('#exit-button').click(function () {
 $('#about-trigger').click(function () {
   hideWindows()
   $('#about-screen').fadeIn('slow', function () {})
-  $('#navigation').show(function() { })
+  $('#navigation').show(function () {})
 })
 
 $('#main-blurb').click(function () {
@@ -24,3 +24,10 @@ function hideWindows () {
   $('.hidden').fadeOut()
   $('#navigation').show()
 }
+
+var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+new ScrollMagic.Scene({triggerElement: "#first-section"})
+  .setTween("#first-section > div", {y: "80%", ease: Linear.easeNone})
+  .addIndicators()
+  .addTo(controller)
