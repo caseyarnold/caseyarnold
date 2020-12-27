@@ -4,7 +4,7 @@ $('#navigation').click(function () {
   $('#exit-button').show()
 })
 
-$('#exit-button').click(function () {
+$('#exit-button').click(() => {
   hideWindows()
 })
 

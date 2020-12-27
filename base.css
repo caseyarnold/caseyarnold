@@ -35,7 +35,8 @@ a{
 }
 
 img,
-a img {
+a img,
+img {
 	border-style: none;
 }
 
